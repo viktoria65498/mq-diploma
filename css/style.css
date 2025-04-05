@@ -99,6 +99,7 @@
 }
 
 .trends {
+  margin-top: 64px;
   margin-bottom: 64px;
 }
 
@@ -106,7 +107,6 @@
   justify-self: center;
   margin-bottom: 45px;
   position: relative;
-  margin-top: 64px;
 }
 
 .title-trends::before {
@@ -433,10 +433,13 @@
   color: #b59f5b;
 }
 
+.products {
+  margin-top: 64px;
+}
+
 .products-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
   gap: 66px;
 }
 
@@ -459,7 +462,7 @@
   z-index: 2;
   position: relative;
   padding: 21px;
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .title-product {
@@ -627,6 +630,14 @@
     flex-wrap: wrap;
     gap: 22px;
   }
+
+  .content {
+    padding: 0 35px;
+  }
+
+  .footer-wrapper {
+    padding: 0 35px;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -638,8 +649,17 @@
     width: calc(50% - 4px);
   }
 
+  .main {
+    max-width: 55%; 
+  }
+
   .content-main {
     gap: 35px;
+  }
+
+  .products-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .product {
@@ -685,16 +705,16 @@
     gap: 64px;
   }
 
-  .aside {
-    width: 100%;
-  }
-
   .products-container {
     flex-direction: column;
     align-items: center;
   }
 
   .product {
+    width: 100%;
+  }
+
+  .aside {
     width: 100%;
   }
 }
@@ -711,7 +731,6 @@
   }
 }
 
-
 .popup {
   position: fixed;
   width: 100%;
@@ -726,10 +745,8 @@
 }
 
 .popup-content {
-  position: relative;
   background: #fff;
   width: 23.5vw;
-  height: 60vh;
   padding: 54px 30px;
   box-sizing: border-box;
   z-index: 999;
@@ -754,6 +771,10 @@
   margin: 0;
 }
 
+.form-one {
+  position: relative;
+}
+
 .button-popup {
   background-image: url("../svg/form-arrows.svg");
   background-color: #f4f7f6;
@@ -763,16 +784,10 @@
   bottom: 0;
 }
 
-.form-popup {
-  margin: 0;
-  flex-direction: column;
-  position: relative;
-  height: 100%;
-}
-
 .radio {
   display: flex;
   gap: 15px;
+  position: relative;
 }
 
 .button-popup2 {
@@ -781,4 +796,15 @@
   color: #fff;
   font-family: OpenSans-Bold, sans-serif;
   text-transform: uppercase;
+}
+
+.field-form {
+  padding: auto;
+}
+
+input[type="radio"] {
+  color: #b59f5b;
+  accent-color: #b59f5b;
+  width: 20px;
+  height: 20px;
 }

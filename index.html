@@ -51,38 +51,35 @@
     <div class="popup visually-hidden">
       <div class="popup-content">
         <h2 class="title-post title-trends title-popup">Ваш фидбек</h2>
-        <div class="popup-container">
-          <form action="" class="search form-popup">
+        <form action="" class="popup-container">
+          <div class="form-one">
             <label class="label">
               <span class="text-popup">Как часто вы заходите на сайт?</span>
               <input class="field" name="query" placeholder="Почти каждый день" required>
             </label>
             <button class="button-search button-popup"></button>
-          </form>
+          </div>
 
-          <form action="" class="search form-popup">
+          <div class="form-two">
             <div class="text-popup">Вы подписаны на e-mail рассылку?</div>
             <div class="radio">
-              <label for="">
-                <input type="radio">
+              <label for="" class="label-radio">
+                <input type="radio" class="radio-button">
                 Да
               </label>
-              <label for="">
-                <input type="radio">
+              <label for="" class="label-radio">
+                <input type="radio" class="radio-button">
                 Нет
               </label>
             </div>
-          </form>
+          </div>
 
-          <label for="aaa" class="search form-popup">
+          <div class="form-three">
             <span class="text-popup">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-            <input class="field field-form" type="text" placeholder="Может, больше рецептов?">
-            <textarea name="answer" rows="3" id="aaa"></textarea>
-          </label>
-    
+            <textarea class="field field-form" name="answer" rows="5" type="text" placeholder="Может, больше рецептов?"></textarea>
+          </div>
           <button class="button-search button-popup2">Отправить</button>
-
-        </div>
+        </form>
       </div>
     </div>
 
@@ -99,9 +96,9 @@
                 <a href="#0">Interior</a>
               </li>
             </ul>
-            <h2 class="title-post title-trend-post">
+            <h3 class="title-post title-trend-post">
               <a href="#0">Сейчас в тренде: сад  на подоконнике</a>
-            </h2>
+            </h3>
           </div>
         </article>
 
@@ -112,9 +109,9 @@
                 <a href="#0">Food</a>
               </li>
             </ul>
-            <h2 class="title-post title-trend-post">
+            <h3 class="title-post title-trend-post">
               <a href="#0">Сыры на красивых  картинках из интернета: какие они на вкус?</a>
-            </h2>
+            </h3>
           </div>
         </article>
 
@@ -128,9 +125,9 @@
                 <a href="#0">Travel</a>
               </li>
             </ul>
-            <h2 class="title-post title-trend-post">
+            <h3 class="title-post title-trend-post">
               <a href="#0">Собираемся в первый поход в горы</a>
-            </h2>
+            </h3>
         </div>
         </article>
 
@@ -144,10 +141,10 @@
                 <a href="#0">Health</a>
               </li>
             </ul>
-            <h2 class="title-post title-trend-post">
+            <h3 class="title-post title-trend-post">
               <a href="#0">Сейчас в тренде: сколько витамина C в лимонах?
               </a>
-            </h2>
+            </h3>
           </div>
         </article>
       </div>
@@ -285,35 +282,35 @@
                 <img src="images/2.jpg" alt="Пляж" width="70" class="img-aside">
                 <div class="container-new-post">
                   <time class="date">14 июня 2019</time>
-                  <h3 class="title-aside-post"><a href="#0">10 мест, ради которых стоит проснуться</a></h3>
+                  <h4 class="title-aside-post"><a href="#0">10 мест, ради которых стоит проснуться</a></h4>
                 </div>
               </article>
               <article class="new-post">
                 <img src="images/151.jpg" alt="Йога" width="70" class="img-aside">
                 <div class="container-new-post">
                   <time class="date">14 июня 2019</time>
-                  <h3 class="title-aside-post"><a href="#0">Йога для домашних</a></h3>
+                  <h4 class="title-aside-post"><a href="#0">Йога для домашних</a></h4>
                 </div>
               </article>
               <article class="new-post">
                 <img src="images/45.jpg" alt="Балкон" width="70" class="img-aside">
                 <div class="container-new-post">
                   <time class="date">14 июня 2019</time>
-                  <h3 class="title-aside-post"><a href="#0">Как мы превратили классное место в балкон</a></h3>
+                  <h4 class="title-aside-post"><a href="#0">Как мы превратили классное место в балкон</a></h4>
                 </div>
               </article>
               <article class="new-post">
                 <img src="images/501.jpg" alt="Кулинария" width="70" class="img-aside">
                 <div class="container-new-post">
                   <time class="date">14 июня 2019</time>
-                  <h3 class="title-aside-post"><a href="#0">Кулинарный подход к науке</a></h3>
+                  <h4 class="title-aside-post"><a href="#0">Кулинарный подход к науке</a></h4>
                 </div>
               </article>
               <article class="new-post">
                 <img src="images/7.jpg" alt="Прически" width="70" class="img-aside">
                 <div class="container-new-post">
                   <time class="date">14 июня 2019</time>
-                  <h3 class="title-aside-post"><a href="#0">Лучшие прически для распущенных волос</a></h3>
+                  <h4 class="title-aside-post"><a href="#0">Лучшие прически для распущенных волос</a></h4>
                 </div>
               </article>
               <form action="" class="search">
@@ -374,10 +371,10 @@
               <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
               <source media="(max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
               <source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg">
-              <img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+              <img src="images/shop-item-desk1.jpg" alt="Подушки на диван" width="100%">
             </picture>
             <div class="product-border">
-              <h2 class="title-post title-product">Подушки на диван</h2>
+              <h3 class="title-post title-product">Подушки на диван</h3>
               <div class="text text-product">
                 <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="underline">здесь</a>.</p>
               </div>
@@ -396,10 +393,10 @@
               <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
               <source media="(max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
               <source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg">
-              <img src="images/shop-item-desk2.jpg" alt="Подушки на диван">
+              <img src="images/shop-item-desk2.jpg" alt="Подушки на диван" width="100%">
             </picture>
             <div class="product-border">
-              <h2 class="title-post title-product">Кукла «Зайчик»</h2>
+              <h3 class="title-post title-product">Кукла «Зайчик»</h3>
               <div class="text text-product">
                 <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<a href="#" class="underline">весенняя серия постов</a> в блоге и несколько подкастов.</p>
               </div>
@@ -418,10 +415,10 @@
               <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
               <source media="(max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
               <source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg">
-              <img src="images/shop-item-desk3.jpg" alt="Подушки на диван">
+              <img src="images/shop-item-desk3.jpg" alt="Подушки на диван" width="100%">
             </picture>
             <div class="product-border">
-              <h2 class="title-post title-product">Шестиугольная рамка</h2>
+              <h3 class="title-post title-product">Шестиугольная рамка</h3>
               <div class="text text-product">
                 <p>Необычная рамка для украшения дома из видео <a href="#" class="underline"></a>«Как сделать рамку из подручных средств за 30 минут»</a></p>
               </div>
