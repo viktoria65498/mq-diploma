@@ -444,7 +444,6 @@
 }
 
 .product {
-  max-width: 350px;
   display: flex;
   flex-direction: column;
   width: calc(100% / 3 - 66px);
@@ -699,6 +698,10 @@
     width: 100%;
   }
 
+  .content {
+    padding: 0 15px;
+  }
+
   .content-main {
     display: flex;
     flex-direction: column;
@@ -706,12 +709,13 @@
   }
 
   .products-container {
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    display: flex;
   }
 
   .product {
     width: 100%;
+    flex-grow: 1;
   }
 
   .aside {
@@ -750,6 +754,8 @@
   padding: 54px 30px;
   box-sizing: border-box;
   z-index: 999;
+
+  position: relative;
 }
 
 .title-popup {
@@ -761,14 +767,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 32px;
+  gap: 24px;
 }
 
 .text-popup {
   font-family: OpenSans-Regular, sans-serif;
   font-size: 0.9375rem;
   line-height: 1.47;
-  margin: 0;
+  margin: 0 0 10px 0;
+  display: inline-block;
 }
 
 .form-one {
@@ -776,7 +783,7 @@
 }
 
 .button-popup {
-  background-image: url("../svg/form-arrows.svg");
+  background-image: url(../svg/form-arrows.svg);
   background-color: #f4f7f6;
   background-size: 10px;
   position: absolute;
@@ -787,7 +794,34 @@
 .radio {
   display: flex;
   gap: 15px;
-  position: relative;
+}
+
+.radio-button {
+  display: none;
+}
+
+.radio-text::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../svg/form-empty-circle.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.radio-button:checked ~ .radio-text::before {
+  background-image: url(../svg/form-circle.svg);
+}
+
+.radio-text {
+  margin: 0;
 }
 
 .button-popup2 {
@@ -802,9 +836,25 @@
   padding: auto;
 }
 
-input[type="radio"] {
-  color: #b59f5b;
-  accent-color: #b59f5b;
+.popup-content::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
   width: 20px;
   height: 20px;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+  top: -26px;
+  right: -5px;
+  cursor: pointer;
+}
+
+.field-form {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 7rem;
 }
